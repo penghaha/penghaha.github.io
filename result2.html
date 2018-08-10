@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+        <title>master defence</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="algorithm.html">Algorithm</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Scenario I</a>
+                <div class="dropdown-content">
+                    <a href="topography.html">Topography</a>
+                    <a href="result.html">Result</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="active" href="javascript:void(0)" class="dropbtn">Scenario IV</a>
+                <div class="dropdown-content">
+                    <a href="topography2.html">Topography</a>
+                    <a class="active" href="result2.html">Result</a>
+                </div>
+            </li>
+            <li><a href="discussion.html">Discussion</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+        </ul>
+        <p><br/></p>
+        <div style="width: 50%; float: left;">
+            <img class="mySlides" src="img2\LID_SOURCE Floodplain DV t = 0 min.png" style="width:100%">
+            <img class="mySlides" src="img2\LID_SOURCE Floodplain DV t = 10 min.png" style="width:100%">
+            <img class="mySlides" src="img2\LID_SOURCE Floodplain DV t = 20 min.png" style="width:100%">
+            <img class="mySlides" src="img2\LID_SOURCE Floodplain DV t = 30 min.png" style="width:100%">
+            <img class="mySlides" src="img2\LID_SOURCE Floodplain DV t = 40 min.png" style="width:100%">
+            <img class="mySlides" src="img2\LID_SOURCE Floodplain DV t = 50 min.png" style="width:100%">
+            <img class="mySlides" src="img2\LID_SOURCE Floodplain DV t = 60 min.png" style="width:100%">
+            <img class="mySlides" src="img2\LID_SOURCE Floodplain DV t = 70 min.png" style="width:100%">
+            <img class="mySlides" src="img2\LID_SOURCE Floodplain DV t = 80 min.png" style="width:100%">
+            <img class="mySlides" src="img2\LID_SOURCE Floodplain DV t = 90 min.png" style="width:100%">
+            <img class="mySlides" src="img2\LID_SOURCE Floodplain DV t = 100 min.png" style="width:100%">
+        </div>
+        <div style="width: 50%; float: right;">
+            <img class="mySlides0" src="img2\Vertical_Buffer Floodplain DV t = 0 min.png" style="width:100%">
+            <img class="mySlides0" src="img2\Vertical_Buffer Floodplain DV t = 10 min.png" style="width:100%">
+            <img class="mySlides0" src="img2\Vertical_Buffer Floodplain DV t = 20 min.png" style="width:100%">
+            <img class="mySlides0" src="img2\Vertical_Buffer Floodplain DV t = 30 min.png" style="width:100%">
+            <img class="mySlides0" src="img2\Vertical_Buffer Floodplain DV t = 40 min.png" style="width:100%">
+            <img class="mySlides0" src="img2\Vertical_Buffer Floodplain DV t = 50 min.png" style="width:100%">
+            <img class="mySlides0" src="img2\Vertical_Buffer Floodplain DV t = 60 min.png" style="width:100%">
+            <img class="mySlides0" src="img2\Vertical_Buffer Floodplain DV t = 70 min.png" style="width:100%">
+            <img class="mySlides0" src="img2\Vertical_Buffer Floodplain DV t = 80 min.png" style="width:100%">
+            <img class="mySlides0" src="img2\Vertical_Buffer Floodplain DV t = 90 min.png" style="width:100%">
+            <img class="mySlides0" src="img2\Vertical_Buffer Floodplain DV t = 100 min.png" style="width:100%">
+        </div>
+        <div style="width: 50%; float: left;">
+            <img src="img2\LID_SOURCE River DD.png" style="width:100%">
+        </div>
+        <div style="width: 50%; float: left;">
+            <img src="img2\Vertical_Buffer River DD.png" style="width:100%">
+        </div>
+        <div style="width: 50%; float: left;">
+            <img src="img2\LID_SOURCE Verification of Mass Balance.png" style="width:100%">
+        </div>
+        <div style="width: 50%; float: left;">
+            <img src="img2\Vertical_Buffer Verification of Mass Balance.png" style="width:100%">
+        </div>
+        <script>
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var y = document.getElementsByClassName("mySlides0");
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+        y[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        y[myIndex-1].style.display = "block";
+        setTimeout(carousel, 1000); // Change image
+        }
+        </script>
+    </body>
+</html>
