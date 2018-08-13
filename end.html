@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<title>master defence</title>
+	</head>
+	<body>
+		<div style="width: 100%; float: left;">
+			<img class="Slides" src="img\END 0.png" style="width:100%">
+			<img class="Slides" src="img\END 10.png" style="width:100%">
+			<img class="Slides" src="img\END 20.png" style="width:100%">
+			<img class="Slides" src="img\END 30.png" style="width:100%">
+			<img class="Slides" src="img\END 40.png" style="width:100%">
+			<img class="Slides" src="img\END 50.png" style="width:100%">
+			<img class="Slides" src="img\END 60.png" style="width:100%">
+			<img class="Slides" src="img\END 70.png" style="width:100%">
+			<img class="Slides" src="img\END 80.png" style="width:100%">
+			<img class="Slides" src="img\END 90.png" style="width:100%">
+			<img class="Slides" src="img\END 100.png" style="width:100%">
+			<img class="Slides" src="img\END 110.png" style="width:100%">
+			<img class="Slides" src="img\END 120.png" style="width:100%">
+			<img class="Slides" src="img\END 130.png" style="width:100%">
+			<img class="Slides" src="img\END 140.png" style="width:100%">
+			<img class="Slides" src="img\END 150.png" style="width:100%">
+			<img class="Slides" src="img\END 160.png" style="width:100%">
+			<img class="Slides" src="img\END 170.png" style="width:100%">
+			<img class="Slides" src="img\END 180.png" style="width:100%">
+			<img class="Slides" src="img\END 190.png" style="width:100%">
+			<img class="Slides" src="img\END 200.png" style="width:100%">
+			<img class="Slides" src="img\END 210.png" style="width:100%">
+			<img class="Slides" src="img\END 220.png" style="width:100%">
+			<img class="Slides" src="img\END 230.png" style="width:100%">
+			<img class="Slides" src="img\END 240.png" style="width:100%">
+			<img class="Slides" src="img\END 250.png" style="width:100%">
+			<img class="Slides" src="img\END 260.png" style="width:100%">
+		</div>
+		<script type="text/javascript">
+			// Animate the pictures
+		var myIndex = 0;
+		carousel();
+		function carousel() {
+		var i;
+		var x = document.getElementsByClassName("Slides");
+		for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}
+		x[myIndex-1].style.display = "block";
+		setTimeout(carousel, 200); // Change image
+		}
+		</script>
+	</body>
+</html>
